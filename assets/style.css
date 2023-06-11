@@ -1,0 +1,98 @@
+body {
+  background-color: black;
+}
+.main-container{
+   text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    color: white;
+}
+.main-title {
+    font-size: 2rem;
+
+}
+.main-container_text{
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.main-form_item{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+.label, .input_error{
+    font-style: italic;
+}
+.input-error_img{
+    width: 7rem;
+    margin-top: 1rem;
+}
+
+.main-container_form{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+.main-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-form_option,.main-form_number{
+    background-color: black;
+    color: white;
+}
+
+.button{
+    margin-top: 1rem;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f4f1f9;
+    border-radius: 3px;
+    width: 6rem;
+}
+
+.button:hover {
+    background-color: #070411;
+    color: white;
+  }
+
+  .main-container_search-result,.error-message{
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+}
+
+.main-container_resultImage{
+    margin-top: 1rem;
+    width: 30rem;
+
+}
+
+.spinner{
+    height: 30px;
+    width: 30px;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+ 
+    to {
+        transform: rotate(360deg);
+    }
+}
+  
+

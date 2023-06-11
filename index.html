@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/JS_Week20/assets/normalize.css" />
+    <link rel="stylesheet" href="/JS_Week20/assets/style.css" />
+    <title>Star Wars</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="main-container">
+        <h1 class="main-title">Star Wars Universe</h1>
+        <div class="main-container_text">
+          You can find random people, characaters, spaceships and different
+          species from Star Wars Universe. Just select who or what you would
+          like to find!
+        </div>
+        <div class="main-container_form">
+          <form action="#" class="main-form">
+            <div class="main-form_item">
+              <label for="item_option" class="label">
+                Who would you like to find?</label
+              >
+              <select
+                id="item_option"
+                name="selectMake"
+                class="main-form_option"
+              >
+                <option selected="true" disabled="disabled">
+                  Please select an option
+                </option>
+
+                <option value="people">People</option>
+                <option value="planets">Planets</option>
+                <option value="species">Species</option>
+                <option value="starships">Starships</option>
+              </select>
+            </div>
+            <div class="main-form_item">
+              <label for="input_number" class="label"
+                >Please select the number from 1 to 10</label
+              >
+              <input
+                value=""
+                id="input_number"
+                type="number"
+                name="inputNumber"
+                min="1"
+                max="10"
+                class="main-form_number"
+              />
+            </div>
+            <div class="input_error"></div>
+            <button class="button">Search</button>
+          </form>
+        </div>
+        <div class="spinner"></div>
+        <div class="main-container_search-result"></div>
+        <div class="main-container_image"></div>
+        <div class="error-message"></div>
+      </div>
+    </main>
+
+    <footer></footer>
+    <script src="/JS_Week20/index.js"></script>
+  </body>
+</html>
