@@ -1,5 +1,5 @@
 const searchResult = document.querySelector(".main-container_search-result"); //находим разметку, где будет отражаться результат поиска
-let btn = document.querySelector(".button"); // находим кнопку и задаем переменную
+const btn = document.querySelector(".button"); // находим кнопку и задаем переменную
 const errorMessage = document.querySelector(".error-message"); //находим разметку, где будет отражаться сообщение об ошибке
 const spinner = document.querySelector(".spinner"); //находим разметку для спиннера во время загрузки
 spinner.style.display = "none"; //убираем отображение спиннера в обычном режиме
@@ -14,7 +14,7 @@ let getPicture = () => {
     "assets/luke.jpg",
     "assets/starWarsFilm.jpg",
   ];
-  let i = Math.floor(Math.random() * 5); // задаем переменную для вычисления рандомного номера картинки
+  let i = Math.floor(Math.random() * arr.length); // задаем переменную для вычисления рандомного номера картинки
   let randomPic = arr[i]; // задаем переменную для рандомной картинки
   return `<img src="${randomPic}" alt="starWarsImage" class="main-container_resultImage" />`; //возвращаем рандомную картинку
 };
